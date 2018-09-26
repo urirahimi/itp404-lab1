@@ -1,0 +1,25 @@
+<table style="width:100%">
+    <tr>
+        <th>Num Comments</th>
+        <th>Ups</th>
+        <th>Downs</th>
+        <th>Title</th>
+        <th>Domain</th>
+    </tr>
+    {{#each model as |mode|}}
+    <tr>
+        <td>{{mode.data.num_comments}}</td>
+        <td>{{mode.data.ups}}</td>
+        <td>{{mode.data.downs}}</td>
+        <td>{{mode.data.title}}</td>
+        <td>{{mode.data.domain}}</td>
+    </tr>
+    {{/each}}{{outlet}}
+</table>
+
+
+<tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+</tr>
